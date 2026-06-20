@@ -389,8 +389,10 @@ clinic_data = pd.DataFrame({
     ]
 })
 
-clinic_data = st.data_editor(
-    clinic_data,
+display_df = clinic_data.drop(columns=["latitude", "longitude"])
+
+edited_df = st.data_editor(
+    display_df,
     column_config={
         "Include": st.column_config.CheckboxColumn("Include in route"),
         "Gypsum Available (kg)": st.column_config.NumberColumn(
@@ -403,6 +405,8 @@ clinic_data = st.data_editor(
     use_container_width=True
 )
 
+clinic_data["Include"] = edited_df["Include"]
+clinic_data["Gypsum Available (kg)"] = edited_df["Gypsum Available (kg)"]
 selected_clinics = clinic_data[clinic_data["Include"] == True].copy()
 
 start_point = {
