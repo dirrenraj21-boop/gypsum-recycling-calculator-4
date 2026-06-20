@@ -240,8 +240,6 @@ How It Works
 
 """, unsafe_allow_html=True)
 
-st.title("♻️ Gypsum Recycling Dashboard")
-st.caption("Free route optimisation using OSRM + OR-Tools")
 
 with st.sidebar:
     st.header("Input Parameters")
