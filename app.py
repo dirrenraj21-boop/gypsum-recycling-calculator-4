@@ -57,7 +57,7 @@ st.markdown("""
 }
 
 h1, h2, h3 {
-    color: #064d2f;
+    color: #064d2f
 }
 
 div[data-testid="metric-container"] {
@@ -167,67 +167,77 @@ div[data-testid="metric-container"] {
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div class="intro-box">
-    <div class="intro-title">♻️ Dental Gypsum Recycling Dashboard</div>
-    <div class="intro-subtitle">Transforming Dental Waste into Sustainable Value</div>
+<div style="
+background:#f4fff7;
+padding:30px;
+border-radius:20px;
+text-align:center;
+margin-bottom:30px;
+">
 
-    <div class="intro-text">
-        This app helps users plan gypsum waste collection from dental clinics.
-        It calculates the most efficient route, fuel usage, transport cost,
-        expected revenue, profit, and estimated CO₂ reduction.
-        <br><br>
-        The aim is to show how dental waste can be transformed into useful recycled products
-        while reducing landfill waste and supporting sustainability.
-    </div>
+<h1 style="color:#064d2f;">
+♻️ Dental Gypsum Recycling Dashboard
+</h1>
 
-    <div class="goal-box">
-        🌱 <b>Goal:</b> Support a sustainable dental ecosystem where gypsum waste is collected,
-        recycled, and converted into useful products instead of being discarded.
-    </div>
+<h3 style="color:#0b6b45;">
+Transforming Dental Waste into Sustainable Value
+</h3>
 
-    <h3 style="color:#064d2f;">How It Works</h3>
+<p style="
+font-size:18px;
+color:#064d2f;
+max-width:850px;
+margin:auto;
+">
 
-    <div class="flow-container">
-        <div class="flow-card">
-            <div class="flow-number">1</div>
-            <div class="flow-icon">🦷</div>
-            <div class="flow-title">Gypsum Waste</div>
-            <div class="flow-desc">Clinics generate gypsum waste from casts and study models.</div>
-        </div>
+This app helps users plan gypsum waste collection from dental clinics.
 
-        <div class="flow-card">
-            <div class="flow-number">2</div>
-            <div class="flow-icon">🚚</div>
-            <div class="flow-title">Collection</div>
-            <div class="flow-desc">Selected clinics are included in the collection route.</div>
-        </div>
+It calculates:
 
-        <div class="flow-card">
-            <div class="flow-number">3</div>
-            <div class="flow-icon">🗺️</div>
-            <div class="flow-title">Route Planning</div>
-            <div class="flow-desc">OSRM and OR-Tools estimate the most efficient route.</div>
-        </div>
+✔️ Most efficient collection route
 
-        <div class="flow-card">
-            <div class="flow-number">4</div>
-            <div class="flow-icon">💰</div>
-            <div class="flow-title">Cost & Profit</div>
-            <div class="flow-desc">The app calculates revenue, fuel cost, transport cost and profit.</div>
-        </div>
+✔️ Fuel and transport cost
 
-        <div class="flow-card">
-            <div class="flow-number">5</div>
-            <div class="flow-icon">🌱</div>
-            <div class="flow-title">Impact</div>
-            <div class="flow-desc">CO₂ reduction and recycling potential are estimated.</div>
-        </div>
-    </div>
+✔️ Revenue and profit
 
-    <div class="footer-line">
-        Every kilogram of gypsum recycled is a step towards a cleaner environment and a sustainable future.
-    </div>
+✔️ Carbon emission reduction
+
+✔️ Sustainability impact
+
+</p>
+
+<h3 style="color:#064d2f;">
+How It Works
+</h3>
+
+<p style="font-size:18px;color:#064d2f;">
+
+🦷 Dental Gypsum Waste
+
+⬇️
+
+🚚 Collection from Clinics
+
+⬇️
+
+🗺️ Route Optimisation
+
+⬇️
+
+♻️ Recycling Process
+
+⬇️
+
+🏺 Recycled Products
+
+⬇️
+
+🌱 Carbon Reduction
+
+</p>
+
 </div>
+
 """, unsafe_allow_html=True)
 
 st.title("♻️ Gypsum Recycling Dashboard")
